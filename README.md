@@ -1,3 +1,40 @@
+
+Prueba Práctica Mobile senior Million and Up 
+App móvil responsive desarrollada con el framework react native con functional components usando typescript para tipado del código, con una arquitectura limpia, estructura bien definida y organizada en carpetas con nombre referencial a cada componente y/o función para un mejor orden y compresión.
+
+Librerías utilizadas más relevantes:
+
+-redux toolkit (manejador de estados y datos en toda la app)
+-axios (utilizada para el manejo de las peticiones asíncronas a la API coinlore y su posterior respuesta)
+-reanimated (utilizada para animar el flatlist o lista de datos)
+-AsyncStorage (utilizada para la persistencia de datos en este caso para guardar la lista de criptomonedas y sus datos así como también  preferencias del usuario en cuanto al modo oscuro)
+-navigation/bottomtab(utilizada para la barra de navegación inferior)
+-jest y test library (para el manejo de las pruebas unitarias)
+…
+
+También se hace uso de los Hooks más populares e importantes de react para optimizacion y performance de la app como:
+
+-useState:( actualizador de estados y rerenderizado de componentes)
+-useEffect:(utilizado para ejecutar funciones requeridas al montar un screen o componente)
+-useCallback(utilizado para memorizar funciones y optimizar el rendimiento de componentes)
+…
+
+Las pruebas unitarias fueron escritas usando Jest y se encuentran  organizadas por nombre del screen en una carpeta llamada test dentro del directorio Src 
+
+Funcionalidades de la app:
+
+Consulta de cryptomonedas en tiempo real mostrandolas en un flatlist animado ordenadas por ranking con 3 filtros aplicables como son ganadoras, perdedoras y capitalización de mercado. Desplegando detalles  al presionar sobre la misma
+La consulta al API trae max 100 ítems por lo que al hacer scroll y acercarse a la posición 100 vuelve a hacer una petición para cargar los siguientes 100 items…
+Guardado de datos en el redux para no realizar llamadas innecesarias a la API
+Modo offline en caso de no tener conexión a Internet se hace uso de la última dará guardada en el asyncStorage para poder consultar y convertir en base a esos datos 
+Barra de búsqueda y filtrado por nombre o símbolo abreviado de la cripto
+Convertidor de monedas intercambiable con barra de búsqueda accesible desde la barra de navegación o desde el botón convert ubicado en el detalle de cada crypto
+Apartado de settings para cambiar a modo oscuro o claro según preferencias del usuario y manteniendolo al cerrar y abrir la app, también el modo offline puede cambiarse manualmente siempre que tenga conexión de lo contrario estará activado sin poder modificarlo
+Mensajes de errores manejados con toast
+En caso de no tener conexión a Internet despliega mensaje de sin conexión con un botón para activar modo offline
+En caso de error al consultar el API muestra mensaje de lista vacía 
+…
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
