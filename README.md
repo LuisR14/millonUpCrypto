@@ -1,5 +1,6 @@
 
 Prueba Práctica Mobile senior Million and Up 
+
 App móvil responsive desarrollada con el framework react native con functional components usando typescript para tipado del código, con una arquitectura limpia, estructura bien definida y organizada en carpetas con nombre referencial a cada componente y/o función para un mejor orden y compresión.
 
 Librerías utilizadas más relevantes:
