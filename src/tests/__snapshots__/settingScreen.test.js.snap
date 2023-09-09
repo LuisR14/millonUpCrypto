@@ -1,0 +1,160 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SettingScreen snapshot of screen to JSON 1`] = `
+<RCTSafeAreaView
+  style={
+    {
+      "alignItems": "center",
+      "flex": 1,
+      "marginHorizontal": 20,
+    }
+  }
+  testID="safeAreaViewTest"
+>
+  <Text
+    style={
+      {
+        "color": "black",
+        "fontSize": 24,
+        "fontWeight": "bold",
+        "marginTop": 20,
+        "paddingHorizontal": 10,
+      }
+    }
+    testID="textTitleTest"
+  >
+    Settings
+  </Text>
+  <View
+    style={
+      {
+        "marginBottom": 20,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "lightblue",
+        "borderRadius": 10,
+        "elevation": 10,
+        "flexDirection": "row",
+        "height": 98.57142857142857,
+        "justifyContent": "space-between",
+        "marginVertical": 8,
+        "padding": 10,
+        "shadowOffset": {
+          "height": 10,
+          "width": 0,
+        },
+        "shadowOpacity": 0.3,
+        "shadowRadius": 5,
+        "width": 660,
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "black",
+          "fontSize": 20,
+          "fontWeight": "bold",
+          "paddingHorizontal": 10,
+        }
+      }
+      testID="darkModeTextSettingTest"
+    >
+      Dark mode
+    </Text>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+        }
+      }
+      testID="viewSwitch1Test"
+    >
+      <RCTSwitch
+        accessibilityRole="switch"
+        onChange={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "height": 31,
+            "width": 51,
+          }
+        }
+        testID="switch1Test"
+        value={false}
+      />
+    </View>
+  </View>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "lightblue",
+        "borderRadius": 10,
+        "elevation": 10,
+        "flexDirection": "row",
+        "height": 98.57142857142857,
+        "justifyContent": "space-between",
+        "marginVertical": 8,
+        "padding": 10,
+        "shadowOffset": {
+          "height": 10,
+          "width": 0,
+        },
+        "shadowOpacity": 0.3,
+        "shadowRadius": 5,
+        "width": 660,
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "black",
+          "fontSize": 20,
+          "fontWeight": "bold",
+          "paddingHorizontal": 10,
+        }
+      }
+      testID="offlineModeTextSettingTest"
+    >
+      Offline mode
+    </Text>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+        }
+      }
+      testID="viewSwitch2Test"
+    >
+      <RCTSwitch
+        accessibilityRole="switch"
+        disabled={false}
+        onChange={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "height": 31,
+            "width": 51,
+          }
+        }
+        testID="switch2Test"
+        value={false}
+      />
+    </View>
+  </View>
+</RCTSafeAreaView>
+`;

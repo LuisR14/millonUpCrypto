@@ -1,0 +1,269 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeScreen snapshot of screen to JSON 1`] = `
+<RCTSafeAreaView
+  style={
+    {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    onLayout={[Function]}
+  >
+    <View
+      style={
+        {
+          "backgroundColor": "transparent",
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "alignItems": "center",
+              "marginTop": 20,
+            },
+            {
+              "backgroundColor": "transparent",
+            },
+            {
+              "borderRadius": 4,
+              "height": undefined,
+              "width": undefined,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            [
+              {
+                "borderRadius": 8,
+                "height": 65.71428571428571,
+                "paddingHorizontal": 10,
+                "paddingVertical": 5,
+                "width": 660,
+              },
+              [
+                {
+                  "overflow": "hidden",
+                },
+                {
+                  "backgroundColor": "#E1E9EE",
+                },
+              ],
+              {
+                "borderRadius": 8,
+                "height": 65.71428571428571,
+                "width": 660,
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            [
+              {
+                "marginTop": 20,
+              },
+              {
+                "backgroundColor": "transparent",
+              },
+              {
+                "borderRadius": 4,
+                "height": undefined,
+                "width": undefined,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "borderRadius": 10,
+                  "height": 131.42857142857142,
+                  "marginVertical": 8,
+                  "padding": 10,
+                  "width": 660,
+                },
+                [
+                  {
+                    "overflow": "hidden",
+                  },
+                  {
+                    "backgroundColor": "#E1E9EE",
+                  },
+                ],
+                {
+                  "borderRadius": 10,
+                  "height": 131.42857142857142,
+                  "width": 660,
+                },
+              ]
+            }
+          />
+          <View
+            style={
+              [
+                {
+                  "borderRadius": 10,
+                  "height": 131.42857142857142,
+                  "marginVertical": 8,
+                  "padding": 10,
+                  "width": 660,
+                },
+                [
+                  {
+                    "overflow": "hidden",
+                  },
+                  {
+                    "backgroundColor": "#E1E9EE",
+                  },
+                ],
+                {
+                  "borderRadius": 10,
+                  "height": 131.42857142857142,
+                  "width": 660,
+                },
+              ]
+            }
+          />
+          <View
+            style={
+              [
+                {
+                  "borderRadius": 10,
+                  "height": 131.42857142857142,
+                  "marginVertical": 8,
+                  "padding": 10,
+                  "width": 660,
+                },
+                [
+                  {
+                    "overflow": "hidden",
+                  },
+                  {
+                    "backgroundColor": "#E1E9EE",
+                  },
+                ],
+                {
+                  "borderRadius": 10,
+                  "height": 131.42857142857142,
+                  "width": 660,
+                },
+              ]
+            }
+          />
+          <View
+            style={
+              [
+                {
+                  "borderRadius": 10,
+                  "height": 131.42857142857142,
+                  "marginVertical": 8,
+                  "padding": 10,
+                  "width": 660,
+                },
+                [
+                  {
+                    "overflow": "hidden",
+                  },
+                  {
+                    "backgroundColor": "#E1E9EE",
+                  },
+                ],
+                {
+                  "borderRadius": 10,
+                  "height": 131.42857142857142,
+                  "width": 660,
+                },
+              ]
+            }
+          />
+          <View
+            style={
+              [
+                {
+                  "borderRadius": 10,
+                  "height": 131.42857142857142,
+                  "marginVertical": 8,
+                  "padding": 10,
+                  "width": 660,
+                },
+                [
+                  {
+                    "overflow": "hidden",
+                  },
+                  {
+                    "backgroundColor": "#E1E9EE",
+                  },
+                ],
+                {
+                  "borderRadius": 10,
+                  "height": 131.42857142857142,
+                  "width": 660,
+                },
+              ]
+            }
+          />
+          <View
+            style={
+              [
+                {
+                  "borderRadius": 10,
+                  "height": 131.42857142857142,
+                  "marginVertical": 8,
+                  "padding": 10,
+                  "width": 660,
+                },
+                [
+                  {
+                    "overflow": "hidden",
+                  },
+                  {
+                    "backgroundColor": "#E1E9EE",
+                  },
+                ],
+                {
+                  "borderRadius": 10,
+                  "height": 131.42857142857142,
+                  "width": 660,
+                },
+              ]
+            }
+          />
+          <View
+            style={
+              [
+                {
+                  "borderRadius": 10,
+                  "height": 131.42857142857142,
+                  "marginVertical": 8,
+                  "padding": 10,
+                  "width": 660,
+                },
+                [
+                  {
+                    "overflow": "hidden",
+                  },
+                  {
+                    "backgroundColor": "#E1E9EE",
+                  },
+                ],
+                {
+                  "borderRadius": 10,
+                  "height": 131.42857142857142,
+                  "width": 660,
+                },
+              ]
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTSafeAreaView>
+`;

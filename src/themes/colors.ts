@@ -1,0 +1,18 @@
+export default {
+  black: 'black',
+  blue: 'blue',
+  white: 'white',
+  red: 'red',
+  green: 'green',
+  darkBlue: 'darkblue',
+  lightBlue: 'lightblue',
+  gray: 'gray',
+  lightGray: 'lightgray',
+  transparent: 'transparent',
+  darkMode: '#121212',
+  darkCyan: 'darkcyan',
+  darkGray: 'darkgray',
+  orange: 'orange',
+  cyan: 'cyan',
+  shadow: '#000',
+};
