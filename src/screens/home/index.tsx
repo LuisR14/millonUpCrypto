@@ -42,6 +42,7 @@ import {saveCryptoList} from '../..//functions/saveCryptoList';
 import {getCryptoListSaved} from '../..//functions/getCryptoListSaved';
 import {useNetInfo} from '@react-native-community/netinfo';
 import {useToast} from 'react-native-toast-notifications';
+import {useIsFocused} from '@react-navigation/native';
 
 export const HomeScreen = () => {
   const [cryptoDetail, setcryptoDetail] = useState<CryptoProps>();
@@ -66,10 +67,17 @@ export const HomeScreen = () => {
   const Offline = Settings?.offline;
   const scrollY = useSharedValue(0);
   const toast = useToast();
+  const focus = useIsFocused();
   useEffect(() => {
     SplashScreen?.hide();
     setisLoading(true);
   }, []);
+
+  useEffect(() => {
+    if (!focus) {
+      scollToTop();
+    }
+  }, [focus]);
 
   useEffect(() => {
     if (netInfo.isConnected !== null) {
@@ -79,6 +87,8 @@ export const HomeScreen = () => {
 
   useEffect(() => {
     if (Offline) {
+      cleanFilter();
+      setcount(1);
       setblockUpdate(true);
       getSavedCryptoList();
     } else if (!Offline && netInfo.isConnected !== null) {
@@ -227,7 +237,9 @@ export const HomeScreen = () => {
                 onPress={() => {
                   scollToTop();
                   if (activefilterGainer) {
-                    setblockUpdate(false);
+                    if (!Offline) {
+                      setblockUpdate(false);
+                    }
                     dispatch(create(cryptoList?.listBackup));
                   } else {
                     setActivefilterLosers(false);
@@ -258,7 +270,9 @@ export const HomeScreen = () => {
                 onPress={() => {
                   scollToTop();
                   if (activefilterLosers) {
-                    setblockUpdate(false);
+                    if (!Offline) {
+                      setblockUpdate(false);
+                    }
                     dispatch(create(cryptoList?.listBackup));
                   } else {
                     setActivefilterGainer(false);
@@ -286,7 +300,9 @@ export const HomeScreen = () => {
                 onPress={() => {
                   scollToTop();
                   if (activefilterVolume24) {
-                    setblockUpdate(false);
+                    if (!Offline) {
+                      setblockUpdate(false);
+                    }
                     dispatch(create(cryptoList?.listBackup));
                   } else {
                     setActivefilterLosers(false);
@@ -340,6 +356,7 @@ export const HomeScreen = () => {
                       setisRefreshing(false);
                     }, 400);
                     checkCryptoApi();
+                    setcount(1);
                   }}
                   title="Refreshing"
                   tintColor={Theme === 'dark' ? colors.white : colors.black}
