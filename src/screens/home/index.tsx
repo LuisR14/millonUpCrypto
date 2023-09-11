@@ -108,6 +108,7 @@ export const HomeScreen = () => {
         dispatch(create(cryptoListResponse));
         dispatch(createBackup(cryptoListResponse));
         saveCryptoList(cryptoListResponse);
+        setblockUpdate(false);
       } else {
         setErrorMsg('server error');
       }
