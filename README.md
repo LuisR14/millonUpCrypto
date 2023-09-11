@@ -30,7 +30,7 @@ Funcionalidades de la app:
 -  Modo offline en caso de no tener conexión a Internet se hace uso de la última dará guardada en el asyncStorage para poder consultar y convertir en base a esos datos
 -  Barra de búsqueda y filtrado por nombre o símbolo abreviado de la cripto
 -  Convertidor de monedas intercambiable con barra de búsqueda accesible desde la barra de navegación o desde el botón convert ubicado en el detalle de cada crypto
--  Apartado de settings para cambiar a modo oscuro o claro según preferencias del usuario y manteniendolo al cerrar y abrir la app, también el modo offline puede cambiarse manualmente siempre que tenga conexión de lo contrario estará activado sin poder modificarlo
+-  Apartado de settings para cambiar a modo oscuro o claro según preferencias del usuario y manteniendolo al cerrar y abrir la app, también se encuentra el modo offline que es un switch informativo que solo cambia con el estado de la red y no puede modificarse manualmente
 -  Mensajes de errores manejados con toast
 -  En caso de no tener conexión a Internet despliega mensaje de sin conexión con un botón para activar modo offline
 -  En caso de error al consultar el API muestra mensaje de lista vacía y al tener conexion a internet nuevamente muestra un mensaje y recarga el flatlist automaticamente
